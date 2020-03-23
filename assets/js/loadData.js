@@ -1,5 +1,5 @@
 const loadDataResearch = async () =>
-  await $.getJSON("/data/research.json", res => {
+  await $.getJSON("/ailabtelkom.github.io/data/research.json", res => {
     //   console.log(res.data);
     res.data.map((item, key) => {
       return $("#research-datatable > tbody").append(`<tr>
@@ -15,7 +15,7 @@ const loadDataResearch = async () =>
     });
   });
 const loadDataAchievement = async () =>
-  await $.getJSON("/data/achievement.json", res => {
+  await $.getJSON("/ailabtelkom.github.io/data/achievement.json", res => {
     //   console.log(res.data);
     res.data.map((item, key) => {
       return $("#achievement-datatable > tbody").append(`<tr>

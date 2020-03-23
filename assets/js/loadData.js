@@ -24,6 +24,8 @@ const loadDataAchievement = async () =>
    </tr>`);
     });
     $(document).ready(function() {
-      $("#achievement-datatable").DataTable();
+      $("#achievement-datatable").DataTable({
+        "order": "desc"
+      });
     });
   });
